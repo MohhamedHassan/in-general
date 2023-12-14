@@ -3,7 +3,7 @@
         <div 
         class="flex-column flex-lg-row d-flex justify-content-lg-between align-items-lg-center"
         >
-            <a (click)="openNav=!openNav">
+            <a (click)="openNav=false">
                 <img src="/assets/images/logo.png" class="mainlogo">
             </a>
             <ul 
@@ -14,7 +14,7 @@
                 *ngFor="let link of navbarLinks">
                     <a
                     [class]="link.class"
-                    (click)="openNav=!openNav">
+                    (click)="openNav=false">
                         <img
                         ngClass="mx-1" 
                         *ngIf="link.icon"
@@ -36,11 +36,11 @@
             class="controls   d-lg-flex">
                 <a  (click)="openNav=!openNav" class="mainbtn">Contact</a>
                 <button 
-                (click)="openNav=!openNav"
+                (click)="openNav=false"
                 class="mx-3"><i class="fa-solid fa-moon"></i></button>
                 <p-menu #menu [model]="items" [popup]="true"></p-menu>
                 <button  
-                class="cstm-lang" (click)="menu.toggle($event);openNav=!openNav">ENG <i class="fa-solid fa-angle-down"></i></button>
+                class="cstm-lang" (click)="menu.toggle($event);openNav=false">ENG <i class="fa-solid fa-angle-down"></i></button>
             </div>
         </div>
         <button 
