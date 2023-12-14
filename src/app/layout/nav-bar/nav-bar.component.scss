@@ -1,0 +1,59 @@
+@import "/src/assets/styles/css_variables.scss";
+::ng-deep {
+    nav {
+        .mainlogo {
+            width: 9.9rem;
+        }
+        .p-menu  {
+            width: auto !important;
+            li:first-of-type {display: none !important;}
+            ul {margin: 0 !important;}
+        }
+        .controls {
+            button {
+                background-color: transparent;
+                border: none;
+                padding: 0;
+            }
+            .fa-moon {
+                font-size: 1.9rem;
+            }
+            .cstm-lang {
+                color: #000;
+                font-family: Barlow;
+                font-size: .94rem;
+                font-style: normal;
+                font-weight: 500;
+            }
+        }
+        .cstm-links {
+            li {
+                a {
+                    padding: 20px 0;
+                    display: inline-block;
+                    color: $navlinks;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    position: relative;
+                    .line {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        img {
+                            max-width: 100%;
+                        }
+                    }
+                }
+                a.active {
+                    color:$maincolor
+                }
+          }
+        }
+        .bars {
+            background-color: transparent;
+            font-size: 1.25rem;
+            border: none;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+<div
+*ngIf="type=='text'"
+class="mb-4">
+
+    <input pInputText type="text" class="p-inputtext-lg w-100" [placeholder]="label" />
+</div>
+<div 
+*ngIf="type=='select'"
+class="card flex justify-content-center mb-4">
+    <p-dropdown [options]="options"  optionLabel="name" [showClear]="true" [placeholder]="label"></p-dropdown>
+</div>
+<div 
+*ngIf="type=='textarea'"
+class="card flex justify-content-center mb-4 w-100">
+    <textarea rows="5" cols="30" pInputTextarea [placeholder]="label" ></textarea>
+    
+</div>
+ 

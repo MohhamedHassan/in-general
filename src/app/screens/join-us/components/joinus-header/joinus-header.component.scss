@@ -1,0 +1,41 @@
+@import "/src/assets/styles/css_variables.scss";
+.joinusHeader {
+    background-color: $background;
+    z-index: 2;
+
+    .imageSection  {
+        background-image: url('/assets/images/Group.png');
+        background-size: cover;
+    }
+    h1 {
+        color: $navlinks ;
+        font-size: 3.5rem;
+        font-style: normal;
+        font-weight: 800;
+        line-height:  4.5rem ;
+        text-transform: capitalize;
+    }
+    p {
+        color: $lightGray;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2.25rem; /* 112.5% */
+    }
+    .star{
+        left: 0;
+        top:0;
+        height: 100%;
+        align-items: center;
+        position: absolute;
+        z-index: 1;
+    }
+    .cstm-arrow {
+        position: absolute;
+        top: -25px;
+    }
+    .content {
+        position: relative;
+        z-index: 2;
+    }
+}

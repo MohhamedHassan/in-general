@@ -1,0 +1,47 @@
+<nav class="py-3 py-lg-0">
+    <div class="container d-flex justify-content-between align-items-start d-lg-block">
+        <div 
+        class="flex-column flex-lg-row d-flex justify-content-lg-between align-items-lg-center"
+        >
+            <img src="/assets/images/logo.png" class="mainlogo">
+            <ul 
+            [class.d-none]="!openNav"
+            class="p-0 m-0  list-unstyled d-lg-flex flex-column flex-lg-row cstm-links">
+                <li 
+                class="mx-0 mx-lg-3"
+                *ngFor="let link of navbarLinks">
+                    <a
+                    [class]="link.class"
+                    href="">
+                        <img
+                        ngClass="mx-1" 
+                        *ngIf="link.icon"
+                        src="/assets/images/Icon.png"  class="icon">
+                        {{link.name}}
+                        <div class="text-center w-100 line">
+                            <img 
+                            *ngIf="link.class=='active'"
+                            src="/assets/images/Vector 15.png" >
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div 
+            [ngClass]="{
+                'd-none':!openNav,
+                'd-flex':openNav
+            }"
+            class="controls   d-lg-flex">
+                <a href="" class="mainbtn">Contact</a>
+                <button class="mx-3"><i class="fa-solid fa-moon"></i></button>
+                <p-menu #menu [model]="items" [popup]="true"></p-menu>
+                <button  class="cstm-lang" (click)="menu.toggle($event)">ENG <i class="fa-solid fa-angle-down"></i></button>
+            </div>
+        </div>
+        <button 
+        (click)="openNav=!openNav"
+        class="bars d-lg-none">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+</nav>

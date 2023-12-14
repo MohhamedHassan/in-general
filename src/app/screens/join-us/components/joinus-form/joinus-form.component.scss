@@ -1,0 +1,26 @@
+@import "/src/assets/styles/css_variables.scss";
+.joinusform {
+    .flexparent {
+        > div {
+            flex-grow: 1;
+        }
+    } 
+    h2,p {
+        color: $navlinks;
+        text-align: center;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 700;
+    } 
+    h2.cstm-bold {
+        font-size: 2.5rem;
+    }
+    p {
+        font-weight: 400;
+    } 
+    form {
+        border-radius: 2.25rem;
+        border: 2px solid $maincolor;
+        background: #FFF;
+    }
+}
