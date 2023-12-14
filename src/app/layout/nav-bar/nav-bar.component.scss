@@ -1,6 +1,9 @@
 @import "/src/assets/styles/css_variables.scss";
 ::ng-deep {
     nav {
+        a {
+            cursor: pointer;
+        }
         .mainlogo {
             width: 9.9rem;
         }
