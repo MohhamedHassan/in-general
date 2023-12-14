@@ -4,7 +4,7 @@
         class="flex-column flex-lg-row d-flex justify-content-lg-between align-items-lg-center"
         >
             <a (click)="openNav=false">
-                <img src="/assets/images/logo.png" class="mainlogo">
+                <img src="assets/images/logo.png" class="mainlogo">
             </a>
             <ul 
             [class.d-none]="!openNav"
@@ -18,12 +18,12 @@
                         <img
                         ngClass="mx-1" 
                         *ngIf="link.icon"
-                        src="/assets/images/Icon.png"  class="icon">
+                        src="assets/images/Icon.png"  class="icon">
                         {{link.name}}
                         <div class="text-center w-100 line">
                             <img 
                             *ngIf="link.class=='active'"
-                            src="/assets/images/Vector 15.png" >
+                            src="assets/images/Vector 15.png" >
                         </div>
                     </a>
                 </li>
